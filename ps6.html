@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=7
+        i=2
+        while(i<n){
+            if(n%i==0){
+                console.log("not a prime")
+                    break;
+            }else{
+                console.log(`${n} is prime Number`)
+            }
+            i++
+        }
+        //sum of even numbers between 1 to 50
+        let j=1
+         var sum=0
+         while(j<=50){
+            if(j%2==0){
+                sum=sum+j
+            }
+            j++
+         }
+         console.log(`sum of even numbers between 1 to 50 is ${sum}`)
+         //count the no of digits
+         let a=12345
+         count=0
+         while(a!==0){
+             a=Math.floor(a/10)
+            count++;
+         }
+         console.log(count)
+         //find minimum digit
+         let b=prompt("enter a number")
+         var min=b[0]
+          i=1
+         while(i<b.length){
+            if(b[i]<=min){
+            min=b[i]
+         }
+         i++
+        }
+        console.log(min)
+        //sum of all odd digits
+        // let numb=13579
+        // let summ=0
+        // j=0
+        // while(numb>0){
+        //     if(numb[j]%2==1){
+        //         summ=summ+numb[j]
+        //     }
+        //     j++
+
+        // }
+        // console.log(summ)
+        let number = 13579; 
+        let num = Math.abs(number); 
+        let sumOfOdd = 0;
+        while (num > 0) {
+        let temp = num % 10; 
+        if (temp % 2 == 1) {
+            sumOfOdd += temp;
+            num = Math.floor(num / 10); 
+  }
+  
+}
+console.log(`sum of odd digits ${sumOfOdd}`);
+//wap to print perfect number
+let c=28
+sum=0
+i=1
+while(i<c){
+    if(c%i==0){
+        sum=sum+i
+    }
+    i++
+}
+console.log(sum)
+if(sum==c){
+    console.log("perfect number")
+}else{
+    console.log("not a perfect number")
+}
+
+
+
+
+    </script>
+</body>
+</html>
